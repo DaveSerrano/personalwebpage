@@ -1,0 +1,135 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    min-width: 800px;
+    
+    
+}
+
+header{
+    
+    background-image: url(./imagensDS/SunriseCockpitView.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid rgb(0,0,0,0);
+    margin-top: -45px;
+}
+.menu{
+    position: sticky;
+    top: 0;
+}
+
+.menu nav ul{
+    text-align: right;
+    margin: 20px 10px 2px 0px;
+}
+
+.menu nav li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #fff;
+}
+
+.menu nav a{
+    display: block;
+    text-align: right;
+    padding: 5px;
+    color: white;
+    text-shadow: 2px 1px 2px rgb(100, 100, 100);
+    text-decoration: none;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.6)
+    
+}
+
+.menu nav a:hover{
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    text-shadow: 2px 1px 2px rgb(60, 60, 60);
+}
+
+.introducao{
+    color: #fff;
+    text-align: center;
+    
+    font-size: 22px;
+    text-shadow: 2px 1px 2px rgb(100, 100, 100);
+}
+
+h1{
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.SobreMim{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.row{
+    max-width: 750px;
+    height: 200px;
+    margin: auto;
+    
+    
+    
+}
+
+.card {
+    width: 200px;
+    border-style: solid;
+    border-color: #f1f1f1;
+    border-width: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.column {
+    float: left;
+    width: 220px;
+    margin: 2%;
+    
+}
+
+.column:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+
+
+
+ 
+.contactos{
+    margin-top: 40px;
+    
+    text-align: center;
+    box-sizing: content-box;
+    height: 200px;
+    width: 60%px;
+    background-color: white ;
+    
+}
+
+.contactosh2{
+    margin: auto;
+}
+
+.rodape{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    background-color: rgba(80, 80, 80, 0.8);
+    font-size: 14px;
+
+}
+
