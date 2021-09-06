@@ -1,0 +1,474 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    margin: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+img{
+    max-width: 99%;
+}
+
+/*Cabeçalho */ 
+
+.headercontainer{
+    background-image: url(./imagensDS/cockpitview.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+    border-top: 0px solid rgb(0,0,0,0);
+    padding: 6em 0;
+    
+    
+
+}
+
+.Title{
+    width: auto;
+    margin: 0 auto;
+    color: #fff;
+    
+}
+
+h1{
+    margin: 0;
+    font-size: 6em;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.h1p{
+    margin: 0;
+    font-size: 3em;
+    }
+
+/* navigation menu */ 
+
+html {
+    scroll-behavior: smooth;
+   }
+
+.menu{
+       display: none;
+   }
+
+/* parallax */ 
+
+
+.parallax {
+  /* The image used */
+  background-image: url(./imagensDS/PortoCovo3x3.jpg);
+ 
+
+  /* Set a specific height */
+  max-width: auto;
+  max-height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* conteudo */ 
+
+.AboutMe{
+    width: 90%;
+    margin: auto;
+}
+
+.pinicialsobremim{
+    margin-top: 0;
+}
+
+
+
+/* card */
+.flipingcards{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    align-content: space-around;
+    
+    
+}
+
+.container{
+    position: relative;
+    flex: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    
+    
+    
+     
+}
+
+.container .card{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    height: 250px;
+    margin: 145px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);  
+    backdrop-filter: blur(1px);
+     
+    
+}
+
+.container .card .imgBx{
+    justify-content: center;
+    max-width: 300px;
+    position: relative;
+    top: -60px;
+    z-index: 1;
+    
+    
+}
+
+.container .card .imgBx img{
+    justify-content: center;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 4px;
+    transition: 0.8s ease-in;
+    border-style: solid;
+    border-width: 2px;
+    
+}
+
+.content{
+    margin: auto;
+}
+
+.container .card .content{
+    justify-content: center;
+    position: absolute;
+    margin-top: -140px;
+    padding: 5px auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+/* hover efects for cards */
+
+.container .card:hover .imgBx{
+    transition: 1s ease-in-out;
+    transform-style: 0.7;
+    margin: auto;
+    padding: -100px;
+        
+}
+
+.container .card:hover .imgBx img{
+    
+    border-radius: 200px;
+    transition: 1s ease-in-out;
+    transform: scale(0.7);
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(10, 45, 145,);
+    margin-top: -100px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    padding-top: -100px;    
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.5s;
+}
+
+.container .card:hover{
+    margin-top: 105px;
+    min-height: 440px;
+    width: 1000px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .card:hover .imgBx img::after{
+    transition-delay: 2s;
+    -ms-zoom-animation: 5s;
+    transform: scale(1);
+}
+
+/*contactos*/
+
+
+.contactosvarios{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center; 
+        
+    
+}
+
+a:link {
+    text-decoration: none;
+    font-style: none;
+    color:black;
+}
+
+a:visited {
+    text-decoration: none;
+    font-style: black;
+    color:black;
+}
+
+.contactosvarios ul{
+    margin: auto;
+    padding: 0;
+}
+
+.contactosvarios li {
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    align-items: center;
+    margin: 0 20px;
+    padding: 0;
+}
+
+
+
+.iconeLocation{
+    justify-content: center;
+    margin: auto;
+    max-width: 50px;
+    max-height: 50px;
+    filter: brightness(0);
+
+} 
+.iconeWhatsUp{
+    justify-content: center;
+    margin: auto;
+    max-width: 50px;
+    max-height: 50px;
+    filter: brightness(0);
+
+} 
+.iconeEmail{
+    justify-content: center;
+    margin: auto;
+    max-width: 54px;
+    max-height: 54px;
+    filter: brightness(0);
+
+} 
+.iconeLinkedIn{
+    justify-content: center;
+    margin: auto;
+    max-width: 50px;
+    max-height: 50px;
+    filter: brightness(0);
+}
+.iconeAirport{
+    justify-content: center;
+    margin: auto;
+    max-width: 50px;
+    max-height: 50px;
+    filter: brightness(0);
+}
+
+
+
+/*contactos hoover*/
+
+
+.iconeLocation:hover{
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
+.iconeWhatsUp:hover{
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.iconeEmail:hover{
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.iconeLinkedIn:hover{
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.iconeAirport:hover{
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contactosvarios h3{
+    cursor: pointer;
+    text-shadow: rgba(0, 0, 0, 10);
+    
+}
+
+
+/*botão para topo do ecrã*/
+
+.backtohome a{
+    width: auto;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 5px;
+    padding: 4px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 1px 2px rgb(100, 100, 100);
+    text-transform: capitalize;
+    
+
+}
+
+.backtohome a:hover{
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    text-shadow: 2px 1px 2px rgb(60, 60, 60);
+
+}
+
+
+/*rodapé*/
+
+.rodape{
+    height: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(80, 80, 80, 0.8);
+    font-size: 14px;
+    
+
+}
+
+
+
+
+
+
+
+
+/* small screens / mobile screens or tablets */
+
+
+@media (max-width:560px) {
+    .container{
+    display: flex;
+    flex-direction: row;
+    }
+    
+    h1{
+        font-size: 5em;
+        
+    }
+    
+    .h1p{
+        font-size: 1.5em;
+    }
+
+    
+}
+
+
+
+    @media (min-width:560px) {
+.menu{
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 50px;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgba(100,100,100,0.3) 50%, rgba(100, 100, 100, 0.7) 100%);
+}
+
+.menu nav ul{
+    text-align: right;
+    font-size: 20px;
+    margin-right: 25px;
+    
+    
+}
+
+.menu nav li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+.menu nav a{
+    margin: 5px;
+    padding: 4px;
+    color: white;
+    text-shadow: 2px 1px 2px rgb(100, 100, 100);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+   
+    
+}
+
+.menu nav li:hover{
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    text-shadow: 2px 1px 2px rgb(60, 60, 60);
+}
+
+.aboutmepaviacao{
+    padding: 0;
+    column-width: 330px;
+    
+}
+
+
+
+
+
+
+.contactosvarios li{
+    display: inline-block;
+    list-style: none;
+    margin: 0p 20px 0 0;
+    }
+    
+    .separation{
+        display: none;
+    }
+        
+
+}
